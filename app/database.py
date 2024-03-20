@@ -36,13 +36,13 @@ class DB_User:
             self.__save()
 
     def __save(self):
-        with open(r'D:\LA\TGBOT_Stepanova\app\data_user.json', 'w') as file:
+        with open(r'C:\Users\legion\projects\NEW\taniyaBOT\app\data_user.json', 'w') as file:
             users = [user.serialized() for user in self.users]
             json.dump(users, file)
 
 
     def __get(self) -> list:
-        with open(r'D:\LA\TGBOT_Stepanova\app\data_user.json', 'r') as file:
+        with open(r'C:\Users\legion\projects\NEW\taniyaBOT\app\data_user.json', 'r') as file:
             return json.load(file)
 
 
